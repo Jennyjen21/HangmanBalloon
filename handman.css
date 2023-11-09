@@ -1,0 +1,154 @@
+html {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-image: url(bk.gif);
+  display: flex; /* Add display flex for layout control */
+  justify-content: space-between; /* Distribute elements evenly */
+  align-items: center; /* Vertically center the elements */
+}
+
+main {
+  max-width: 610px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  margin-left: auto; /* Align to the right */
+}
+
+h1, h5 {
+  color: brown;
+  text-shadow: 2px 2px rgb(73, 51, 21);
+}
+
+.dead {
+  position: absolute;
+  margin: 0 auto;
+  top: -1em;
+  left: -1em;
+}
+
+.deadly {
+  position: absolute;
+  margin: 0;
+  top: 5em;
+  right: 0;
+  width: 400px; /* Adjust the width to your desired size */
+  height: 600px; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+  max-width: 80%; /* Adjust the width as needed */
+}
+
+.win {
+  color: white;
+  background-color: green;
+}
+
+.loss {
+  color: white;
+  background-color: red;
+}
+
+#game-container {
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  width: 100%;
+}
+
+#game-info {
+  flex: 1; /* Take up 50% of the width */
+}
+
+#word-container {
+  flex: 1; /* Take up 50% of the width */
+}
+
+#word {
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 24pt;
+  color: rgb(255, 255, 153);
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#guesses {
+  text-align: center;
+  font-size: 16pt;
+  color: rgb(255, 255, 153);
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.guess {
+  background-color: rosybrown;
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid rgb(255, 255, 153);
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Adjust styles for smaller screens */
+@media only screen and (max-width: 667px) {
+  #guesses {
+    text-align: center;
+    font-size: 24pt;
+    color: rgb(255, 255, 153);
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .guess {
+    padding: 30px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 153);
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+#guessBox {
+  height: 60px;
+  border-radius: 10px;
+  padding-top: 5px;
+  font-size: 18pt;
+  width: 200px;
+  padding-left: 10px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #666;
+  background-color: rgb(255, 255, 153);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: rgb(224, 224, 139);
+}
+
+.button:active {
+  background-color: rgb(224, 224, 139);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
